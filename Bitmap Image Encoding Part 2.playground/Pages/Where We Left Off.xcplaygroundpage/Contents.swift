@@ -54,8 +54,8 @@ for character in encodedBitmap {
  
  Write your ideas in the code comment below.
  */
-// I notice that...
-// I know this because...
+// I notice that the string determines which squares are black or white based on the string. When there is 0, it draws a black square and if it is 1, it draws a white square.
+// I know this because in the code, it has an 'if else' statement that shows from the code that if it is a 0, it draws a black square and if else, draw a white square.
 /*:
  Now, **remember to commit and push your work**.
  */
