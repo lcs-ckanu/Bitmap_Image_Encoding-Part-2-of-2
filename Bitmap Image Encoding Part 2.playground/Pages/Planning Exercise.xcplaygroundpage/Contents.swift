@@ -22,12 +22,9 @@
  */
 
 // Here's my list of points describing how I decoded the image...
-// 1.
-// 2.
-// 3.
-// 4.
-// 5.
-// etc. (add more points as needed)
+// 1. First number shows how many white squares there is . Although, if the number is a 0, start with a black square.
+// 2. The following numbers are in a consistent pattern of white-black-white-black...
+// 3. When there is a new line, move to the next row and start from the biggining of the row with the same pattern.
 
 /*:
  Now, **remember to commit and push your work**.
