@@ -20,9 +20,9 @@ import PlaygroundSupport
 
 // Copy your encoded image string here...
 let encodedBitmap = """
-B8,R1,B11
-B7,R2,B11
-B7,R1,B11
+B8,R1,B5,B6
+B7,R2,B5,B6
+B7,R2,B5,B6
 B7,R6,B7
 B7,R7,B6
 B7,R2,O3,R3,B5
@@ -36,10 +36,10 @@ B7,R2,O3,R2,B6
 B2,R7,O3,R7,B1
 R2,O5,R2,O3,R2,O4,R2
 R3,O4,R2,O3,R2,O3,R3
-B2,R16,B2
+B2,R8,R8,B2
 B8,R1,O3,R2,B6
 B8,R1,O4,R1,B6
-B13,R1,B6
+B8,R1,B4,R1,B6
 """
 
 // Make a canvas
@@ -101,7 +101,13 @@ for character in encodedBitmap {
         canvas.fillColor = Color.white
         currentColor = "white"
         
-    } else {
+    } else if character == "B" {
+        canvas.fillColor = Color.black
+    } else if character == "R" {
+        canvas.fillColor = Color.red
+    } else if character == "O" {
+        canvas.fillColor = Color.orange
+} else {
         
         // Get the new number of pixels to draw
         drawThisManyPixels = Int(String(character))!
